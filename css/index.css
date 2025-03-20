@@ -3,3 +3,37 @@
 *{
     font-family: "Poppins", sans-serif;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 104px;
+
+    & a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        margin-left: 65px;
+        /* font-size: 22px; */
+        transition-duration: 150ms;
+
+        &:hover{
+            color: #E6C744;
+        }
+
+        &.btn{
+            background-color: black;
+            color: white;
+            line-height: 62px;
+            display: inline-block;
+            padding: 0 22px;
+            border-radius: 7px;
+            margin-left: 35px;
+
+            &:hover{
+                background-color: #E6C744;
+                color: black;
+            }
+        }
+    }
+}
