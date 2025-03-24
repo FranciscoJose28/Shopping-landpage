@@ -41,6 +41,45 @@ header{
     }
 }
 
+#marcas{
+    height: 100px;
+    background-color: #E6C744;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    & img{
+        mix-blend-mode: multiply;
+    }
+}
+
+#newsletter{
+    margin-top: 20px;
+    background-color: #E6C744;
+    color: white;
+    display: grid;
+    & h1{
+        font-size: 55px;
+        line-height: 70px;
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+    }
+    & div{
+        display: flex;
+        justify-content: center;
+    }
+    & input{
+        width: 300px;
+        margin-top: 49px;
+        margin-left: 600px;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        border: 0px;
+    }
+}
 
 footer{
     background-color: black;
