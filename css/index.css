@@ -42,22 +42,22 @@ header{
 }
 
 #marcas{
-    height: 100px;
     background-color: #E6C744;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 10px;
+    padding: 30px 100px;
     & img{
         mix-blend-mode: multiply;
     }
 }
 
 #newsletter{
-    margin-top: 20px;
     background-color: #E6C744;
     color: white;
-    display: grid;
+    text-align: center;
+    padding: 150px 0;
     & h1{
         font-size: 55px;
         line-height: 70px;
@@ -65,19 +65,42 @@ header{
         width: 60%;
         padding: 10px;
     }
-    & div{
+    & p{
+        font-size: 24px;
+        margin: 50px 0;
+    }
+    & .input-group{
         display: flex;
         justify-content: center;
+        background-color: white;
+        width: 500px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 auto;
     }
     & input{
-        width: 300px;
-        margin-top: 49px;
-        margin-left: 600px;
-        padding: 15px;
+        flex: 1;
+        border: none;
+        font-size: 24px;
+        &:focus{
+            outline: none;
+        }
+    }
+    & button{
+        line-height: 60px;
+        padding: 0 36px;
         border-radius: 10px;
-        display: flex;
-        align-items: center;
-        border: 0px;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        transition-duration: 200ms;
+        border: none;
+        &:hover{
+            background-color: #E6C744;
+            color: black;
+            cursor: pointer;
+        }
     }
 }
 
