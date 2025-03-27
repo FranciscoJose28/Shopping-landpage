@@ -54,6 +54,46 @@ header {
     }
 }
 
+#novidades{
+    margin-top: 40px;
+    & h1{
+        margin-bottom: 40px;
+        margin-left: 270px;
+        text-transform: uppercase;
+    }
+    & .container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    & img {
+        width: 310px;
+        height: 410px;
+        margin-bottom: 28px;
+    }
+    & a{
+        margin-top: 28px;
+        text-decoration: none;
+        & div {
+            color: black;
+        }
+        & p{
+            color: #7F7F7F;
+        }
+        & .arrow {
+            display: flex;
+            justify-content: end;
+            position: relative;
+            color: #7F7F7F;
+            margin-top: -35px;
+        }
+        & :hover {
+            color: #E6C744;
+        }
+    }
+}
+
 #newsletter {
     background-color: #E6C744;
     color: white;
@@ -113,9 +153,41 @@ header {
 }
 
 #favoritos {
-    & .cards{
+    margin-top: 40px;
+    & h1{
+        margin-bottom: 40px;
+        margin-left: 330px;
+    }
+    & .cards {
         display: flex;
-        gap: 20px;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    & img {
+        width: 420px;
+        height: 290px;
+        margin-bottom: 28px;
+    }
+    & a{
+        margin-top: 28px;
+        text-decoration: none;
+        & div {
+            color: black;
+        }
+        & p{
+            color: #7F7F7F;
+        }
+        & .arrow {
+            display: flex;
+            justify-content: end;
+            position: relative;
+            color: #7F7F7F;
+            margin-top: -35px;
+        }
+        & :hover {
+            color: #E6C744;
+        }
     }
 }
 
