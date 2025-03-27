@@ -112,6 +112,13 @@ header {
     }
 }
 
+#favoritos {
+    & .cards{
+        display: flex;
+        gap: 20px;
+    }
+}
+
 #aplicativo {
     padding: 100px;
     display: flex;
