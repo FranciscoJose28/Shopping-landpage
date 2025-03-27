@@ -54,33 +54,39 @@ header {
     }
 }
 
-#novidades{
+#novidades {
     margin-top: 100px;
-    & h1{
+
+    & h1 {
         margin-bottom: 40px;
-        margin-left: 270px;
+        margin-left: 100px;
         text-transform: uppercase;
     }
+
     & .container {
-        display: flex;
+        display: grid;
         gap: 30px;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 100px;
     }
+
     & img {
-        width: 310px;
-        height: 410px;
+        width: 100%;
         margin-bottom: 28px;
     }
-    & a{
+
+    & a {
         margin-top: 28px;
         text-decoration: none;
+
         & div {
             color: black;
         }
-        & p{
+
+        & p {
             color: #7F7F7F;
         }
+
         & .arrow {
             display: flex;
             justify-content: end;
@@ -88,6 +94,7 @@ header {
             color: #7F7F7F;
             margin-top: -35px;
         }
+
         & :hover {
             color: #E6C744;
         }
@@ -154,30 +161,37 @@ header {
 
 #favoritos {
     margin-top: 100px;
-    & h1{
+
+    & h1 {
         margin-bottom: 40px;
         margin-left: 330px;
     }
+
     & .cards {
         display: flex;
         gap: 30px;
         justify-content: center;
         align-items: center;
     }
+
     & img {
         width: 420px;
         height: 290px;
         margin-bottom: 28px;
     }
-    & a{
+
+    & a {
         margin-top: 28px;
         text-decoration: none;
+
         & div {
             color: black;
         }
-        & p{
+
+        & p {
             color: #7F7F7F;
         }
+
         & .arrow {
             display: flex;
             justify-content: end;
@@ -185,6 +199,7 @@ header {
             color: #7F7F7F;
             margin-top: -35px;
         }
+
         & :hover {
             color: #E6C744;
         }
@@ -265,13 +280,14 @@ header {
                     height: 300px;
                 }
 
-                &.bolinhas-cinza{
+                &.bolinhas-cinza {
                     width: 420px;
                     height: 420px;
                     border: none;
                     transform: translate(-50%, -50%) rotate(-45deg);
                     animation: orbita linear infinite 30s;
-                    &::after{
+
+                    &::after {
                         content: "";
                         width: 17px;
                         height: 17px;
@@ -281,7 +297,8 @@ header {
                         top: calc(100% - 8px);
                         left: calc(50% - 8px);
                     }
-                    &::before{
+
+                    &::before {
                         content: "";
                         width: 24px;
                         height: 24px;
@@ -293,13 +310,14 @@ header {
                     }
                 }
 
-                &.bolinhas-amarela{
+                &.bolinhas-amarela {
                     width: 460px;
                     height: 460px;
                     border: none;
                     transform: translate(-50%, -50%) rotate(45deg);
                     animation: orbita linear infinite 60s;
-                    &::after{
+
+                    &::after {
                         content: "";
                         width: 24px;
                         height: 24px;
@@ -309,7 +327,8 @@ header {
                         top: calc(100% - 8px);
                         left: calc(50% - 8px);
                     }
-                    &::before{
+
+                    &::before {
                         content: "";
                         width: 36px;
                         height: 36px;
@@ -390,10 +409,11 @@ footer {
 
 
 @keyframes orbita {
-    to{
+    to {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
-    from{
+
+    from {
         transform: translate(-50%, -50%) rotate(315deg);
     }
 }
