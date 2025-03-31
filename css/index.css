@@ -523,6 +523,22 @@ footer {
             margin-left: 30px;
         }
     }
+    #banners{
+        padding: 0 60px;
+    }
+    #marcas{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #novidades{
+        margin-top: 60px;
+        & h1{
+            padding-left: 60px;
+        }
+        & .container{
+            padding: 0 60px;
+        }
+    }
 }
 
 /* tablet em pé */
@@ -548,11 +564,29 @@ footer {
             }
         }
     }
+    #novidades{
+        & .container{
+            gap: 26px;
+        }
+        & a{
+            & h5{
+                font-size: 16px;
+            }
+        }
+    }
 }
 /* smartphone */
 @media screen and ( width <= 600px ) {
     header{
         padding: 16px;
+    }
+    #banners{
+        padding: 0 16px;
+    }
+    #novidades{
+        & .container{
+            grid-template-columns: 1fr;
+        }
     }
 }
 
