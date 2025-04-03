@@ -621,19 +621,54 @@ footer {
 @media screen and ( width <= 600px ) {
     header{
         padding: 16px;
+        & .logo{
+            width: 120px;
+        }
     }
     #banners{
         padding: 0 16px;
     }
+    #marcas{
+        display: block;
+        overflow-x: auto;
+        padding: 0 16px;
+        & div{
+            width: 600px;
+            display: flex;
+            padding: 16px 0;
+        }
+    }
     #novidades{
+        & h1{
+            padding-left: 16px;
+        }
         & .container{
+            padding: 0 16px;
             grid-template-columns: 1fr;
         }
     }
     #promocao{
         padding: 0;
+        overflow: hidden;
+        & img{
+            display: block;
+            width: 180%;
+        }
+        & div{
+            position: initial;
+            top: initial;
+            left: initial;
+            transform: initial;
+            width: 100%;
+            text-align: center;
+            /* background-color: var(--primary); */
+            padding: 40px 0;
+        }
     }
     #favoritos{
+        & h1{
+            padding-left: 16px;
+        }
         & .cards{
             padding: 0 16px;
             grid-template-columns: 1fr;
