@@ -539,6 +539,32 @@ footer {
             padding: 0 60px;
         }
     }
+    #promocao{
+        padding: 0 60px;
+        
+        & div{
+            
+            & h1{
+                font-size: 45px;
+                /* margin-top: 30px; */
+            }
+            & p{
+                font-size: 21px;
+                margin-bottom: 10px;
+            }
+            & button{
+                font-size: 20px;
+            }
+        }
+    }
+    #favoritos{
+        & .cards{
+            gap: 26px;
+        }
+    }
+    #aplicativo{
+        padding: 60px;
+    }
 }
 
 /* tablet em pé */
@@ -574,6 +600,22 @@ footer {
             }
         }
     }
+    #promocao{
+        & div{
+            & h1{
+                font-size: 35px;
+                line-height: 60px;
+                margin-bottom: -15px;
+            }
+            & p{
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            & button{
+                font-size: 12px;
+            }
+        }
+    }
 }
 /* smartphone */
 @media screen and ( width <= 600px ) {
@@ -585,6 +627,14 @@ footer {
     }
     #novidades{
         & .container{
+            grid-template-columns: 1fr;
+        }
+    }
+    #promocao{
+        padding: 0;
+    }
+    #favoritos{
+        & .cards{
             grid-template-columns: 1fr;
         }
     }
